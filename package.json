@@ -1,0 +1,24 @@
+{
+  "name": "cross-origin-communicator",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prepublish": "npm run build",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "clean": "rimraf dist"
+  },
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbkmoney/cross-origin-communicator.git"
+  },
+  "author": "Ildar Galeev",
+  "license": "",
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "typescript": "^2.9.2"
+  }
+}
