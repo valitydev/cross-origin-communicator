@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "npm run build",
     "prebuild": "npm run clean",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json",
     "clean": "rimraf dist"
   },
   "private": true,
@@ -19,6 +19,6 @@
   "license": "",
   "dependencies": {
     "rimraf": "^2.6.2",
-    "typescript": "^2.9.2"
+    "typescript": "^2.7.1"
   }
 }
