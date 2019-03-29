@@ -10,7 +10,7 @@ const parse = (data: any): any => {
 
 const transportListener = (transportName: string, events: any, e: MessageEvent) => {
     const parsed = parse(e.data);
-    if (parsed && (parsed.name in events)) {
+    if (parsed && parsed.name in events) {
         if (parsed.transport === transportName) {
             events[parsed.name].call(this, parsed.data);
         }
@@ -18,7 +18,6 @@ const transportListener = (transportName: string, events: any, e: MessageEvent) 
 };
 
 export class RealTransport implements Transport {
-
     private readonly events: any = {};
     private readonly transportListener: any;
 

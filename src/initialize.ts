@@ -3,7 +3,12 @@ import { Transport } from './transport';
 import { log } from './log';
 import { Constants } from './constants';
 
-export const initialize = (target: Window, origin: string, transportName: string, isLog: boolean = false): Promise<Transport> => {
+export const initialize = (
+    target: Window,
+    origin: string,
+    transportName: string,
+    isLog: boolean = false
+): Promise<Transport> => {
     let interval: number;
     return new Promise((resolve, reject) => {
         const reply = (e: any) => {
