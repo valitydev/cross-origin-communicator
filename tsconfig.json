@@ -1,18 +1,15 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "noImplicitAny": false,
-    "sourceMap": false,
-    "declaration": true,
-    "outDir": "dist",
-    "rootDir": "src",
-    "lib": ["es2015", "dom"]
-  },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "declaration": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "lib": ["es2015", "dom"],
+        "skipLibCheck": true
+    },
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules"]
 }
