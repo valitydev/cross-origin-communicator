@@ -29,9 +29,9 @@ export const initialize = (
             if (isLog) {
                 log('initializer send handshake attempt');
             }
-            if (attempt === 10) {
+            if (attempt === 100) {
                 clearInterval(interval);
-                return reject('communicator handshake failed');
+                return reject('Communicator handshake attempt exceeded');
             }
         };
         interval = window.setInterval(doSend, 500);
